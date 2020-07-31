@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_config"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.inf2dm3.ic_.flip.GameConfig"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/ic_1c">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_weight="0.08">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_weight="0.08"
+            android:background="@drawable/header">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:text="@string/lblseekX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvX"
+        tools:text="@string/lblseekX"
+        tools:textStyle="bold"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="normal|bold" />
+        android:textColor="orange"
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekX"
+        android:max="6"
+        android:progress="0"
+        android:backgroundTintMode="src_atop" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvY"
+        tools:text="@string/lblseekY"
+        android:textStyle="normal|bold"
+        android:textIsSelectable="false"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekY"
+        android:max="6"
+        android:progress="0" />
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTr"
+        tools:text="@string/lblTR"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekTr"
+        android:max="7"
+        android:progress="0"
+        />
+
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbNum"
+            android:contentDescription="@string/rbNumeros"
+            tools:text="@string/rbNumeros"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="normal|bold"
+            android:textColorLink="@android:color/holo_orange_dark"
+            android:layout_weight="0.08" />
+
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbCol"
+            android:contentDescription="@string/rbColores"
+            tools:text="@string/rbColores"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="normal|bold"
+            android:textColorLink="@android:color/holo_orange_dark" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="353dp"
+        android:layout_height="121dp">
+
+        <CheckBox
+            android:text="CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbSo"
+            android:layout_weight="1"
+            tools:text="@string/Sonido"
+            android:contentDescription="@string/Sonido"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="normal|bold"
+            android:textColorLink="@android:color/holo_orange_dark" />
+
+        <CheckBox
+            android:text="CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbVb"
+            android:layout_weight="1"
+            tools:text="@string/Vibracion"
+            android:contentDescription="@string/Sonido"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_weight="0.20">
+
+    </RelativeLayout>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnJugar"
+        android:contentDescription="@string/Jugar"
+        tools:text="@string/Jugar"
+        android:onClick="onclick_jugar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_orange_dark" />
+
+</LinearLayout>

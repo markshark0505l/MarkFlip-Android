@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Flip</string>
+    <string name="lblseekX"> Numero de elementos horizontales</string>
+    <string name="lblseekY"> Numero de elementos verticales</string>
+    <string name="lblTR"> Numero de tramas </string>
+    <string name="rbColores"> Colores  </string>
+    <string name="rbNumeros"> AbsurdFlip </string>
+    <string name="Sonido"> Sonido </string>
+    <string name="Vibracion"> Vibracion </string>
+    <string name="Jugar"> Jugar</string>
+</resources>
